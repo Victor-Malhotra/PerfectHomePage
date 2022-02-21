@@ -21,22 +21,26 @@
                 <h2>School Links</h2>
                 <p>
                     <div class="tile_container" id="WestMEC">
-                        <div class="tile">
-                            <div class="tile_image" id="classroom_img">
-                                <img draggable="false" src="images/School_Sites/googleClassroom.png" alt="Google Classroom">
+                        <!-- <- FIRST TILE ROW -> -->
+                        <div class="tile_row">
+                            <div class="tile" id="classroom_tile">
+                                <div class="tile_image" id="classroom_img">
+                                    <img draggable="false" src="images/School_Sites/googleClassroom.png" height="40px" width="40px" alt="Google Classroom">
+                                </div>
+                                <div class="tile_text" id="classroom_text">
+                                    Google Classroom
+                                </div>
                             </div>
-                            <div class="tile_text" id="classroom_text">
-                                Google Classroom
+                            <div class="tile" id="familyLink_tile">
+                                <div class="tile_image" id="familyLink_img">
+                                    <img draggable="false" src="images/School_Sites/familyLink.svg" height="40px" width="40px" alt="Google Classroom">
+                                </div>
+                                <div class="tile_text" id="familyLink_text">
+                                    FamilyLink Grades
+                                </div>
                             </div>
                         </div>
-                        <div class="tile">
-                            <div class="tile_image" id="classroom_img">
-                                <img draggable="false" src="images/School_Sites/googleClassroom.png" alt="Google Classroom">
-                            </div>
-                            <div class="tile_text" id="classroom_text">
-                                Google Classroom
-                            </div>
-                        </div>
+                        <!-- <- END OF TILE ROW -> -->
                     </div>
                 </p>
             </div>
@@ -88,6 +92,7 @@
     <!-- End of Container -->
 </body>
 <script src="js/main.js"></script>
+<script src="js/link.js"></script>
 <script type="text/javascript " src="js/plugins/skrollr.js "></script>
 <script type="text/javascript ">
     var s = skrollr.init();
