@@ -1,0 +1,12 @@
+.container {
+  margin-top: 80px;
+}
+
+.container .owl-carousel {
+  top: 40px;
+}
+
+.container .owl-carousel .item-video {
+  height: 300px;
+}
+/*# sourceMappingURL=carousel.css.map */
