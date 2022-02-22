@@ -8,7 +8,7 @@
   font-family: sans-serif;
 }
 
-body .container {
+body .code_container {
   scroll-snap-type: both mandatory;
   position: fixed;
   top: 0;
@@ -17,7 +17,7 @@ body .container {
   display: flex;
 }
 
-body .container section {
+body .code_container section {
   scroll-snap-align: start;
   scroll-margin-left: 100px;
   min-width: 100%;
@@ -29,34 +29,34 @@ body .container section {
   /* --- */
 }
 
-body .container section:nth-of-type(1) {
+body .code_container section:nth-of-type(1) {
   background-color: #fcf0b1;
 }
 
-body .container section:nth-of-type(2) {
+body .code_container section:nth-of-type(2) {
   background: #c3f4f8;
 }
 
-body .container section:nth-of-type(3) {
+body .code_container section:nth-of-type(3) {
   background: #a6f3fa;
 }
 
-body .container section:nth-of-type(4) {
+body .code_container section:nth-of-type(4) {
   background: #fcc8e7;
 }
 
-body .container section .content {
+body .code_container section .content {
   max-width: 1400px;
   padding: 40px;
   text-align: center;
 }
 
-body .container section .content > h2 {
+body .code_container section .content > h2 {
   font-size: 4em;
   color: #111;
 }
 
-body .container section .content p {
+body .code_container section .content p {
   font-size: 1.3em;
   line-height: 1.4em;
   align-items: center;

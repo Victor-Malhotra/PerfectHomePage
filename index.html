@@ -20,8 +20,11 @@
     <title>The Perfect HomePage</title>
     <!--* Connect jQuery --->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--* CSS & MIN.CSS *--->
     <link rel="stylesheet" href="CSS/main.css">
-
+    <!--* Carousel <link></link> --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <!--
@@ -37,7 +40,7 @@
 
 <body>
     <!-- Container-->
-    <div class="container" data-0="transform:translateX(0%);" data-2503="transform:translateX(-300%);">
+    <div class="code_container" data-0="transform:translateX(0%);" data-2503="transform:translateX(-300%);">
         <!--====================================================================================================-->
         <!--========================================== SCHOOL SECTION ==========================================-->
         <!--====================================================================================================-->
@@ -152,11 +155,16 @@
         <section id="section_2">
             <!-- Content 2 -->
             <div class=" content ">
-                <h2>Section Two</h2>
+                <h2>Youtube Videos</h2>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque odio adipisci esse ab perspiciatis dolores, nulla laudantium praesentium accusamus atque quas doloremque! Doloribus optio quam numquam totam qui. Unde, esse? Esse, porro quia iure accusantium
-                    animi, aliquam reprehenderit velit veniam deserunt reiciendis odio earum tempore provident quos quam praesentium, atque minus ea magnam doloribus ipsum quo! Eaque consectetur autem ex blanditiis ducimus suscipit odit sit magnam eum?
-                    Vero, exercitationem.
+                    <!--* https://www.youtube.com/watch?v=vHm9_MN8jRA --->
+                    <div class="container">
+                        <div class="owl-carousel">
+                            <div class="item-video">
+                                <a href="https://www.youtube.com/watch?v=wX75Z-4MEoM&t=1384s" class="owl-video"></a>
+                            </div>
+                        </div>
+                    </div>
                 </p>
             </div>
             <!-- End of Content 2 -->
@@ -192,11 +200,15 @@
     </div>
     <!-- End of Container -->
 </body>
+<!--* <- JAVASCRIPT -> --->
 <script src="js/animations.js"></script>
 <script src="js/links/school_links.js"></script>
+<!--* Side Scrolling --->
 <script type="text/javascript " src="js/plugins/skrollr.js "></script>
 <script type="text/javascript ">
     var s = skrollr.init();
 </script>
+<!--* Owl Carousel --->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>
