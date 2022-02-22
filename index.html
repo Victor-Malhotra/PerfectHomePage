@@ -18,12 +18,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Victor's perfect homepage">
     <title>The Perfect HomePage</title>
+    <!--* Connect jQuery --->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/main.css">
+
 </head>
 
 <!--
- *  // 20/02/2022 - TAG: Today - Made the outline and horizontal scroll by scrolling the mouse, made the school links section and added my links for DVHS and West-MEC, Also added the ability to change between West-MEC and DVHS tiles
+ *  // 20/02/2022 - TAG: Today - Made the outline and horizontal scroll by scrolling the mouse, made the school links section and added my links for West-MEC 
  *  
  *  
  *  
@@ -44,15 +46,23 @@
             <div class="content">
                 <h2>School Links</h2>
                 <p>
+                    <div class="controll-tg">
+                        <div class="toggle-btn" id="schools_toggle" onclick>
+                            <div class="inner-circle">
+
+                            </div>
+                        </div>
+                    </div>
                     <!-- <- West_MEC TILE CONTAINER -->
-                    <div class="tile_container" id="WestMEC">
+                    <div class="tile_container" id="WestMEC-SchoolLinks">
+                        <h3>West-MEC</h3>
                         <!-- <- FIRST TILE ROW -> -->
                         <div class="tile_row">
                             <!-- <- GOOGLE CLASSROOM TILE -->
                             <div class="tile" id="classroom_tile">
                                 <!-- <- GOOGLE CLASSROOM IMAGE -> -->
                                 <div class="tile_image" id="classroom_img">
-                                    <img draggable="false" src="images/School_Sites/googleClassroom.png" height="40px" width="40px" alt="Google Classroom">
+                                    <img draggable="false" src="images/School_Sites/West_MEC/googleClassroom.png" height="40px" width="40px" alt="Google Classroom">
                                 </div>
                                 <!-- <- END OF GOOGLE CLASSROOM IMAGE -> -->
                                 <!-- <- GOOGLE CLASSROOM TEXT -> -->
@@ -66,7 +76,7 @@
                             <div class="tile" id="familyLink_tile">
                                 <!-- <- FAMILYLINK IMAGE -> -->
                                 <div class="tile_image" id="familyLink_img">
-                                    <img draggable="false" src="images/School_Sites/familyLink.svg" height="40px" width="40px" alt="Family Link">
+                                    <img draggable="false" src="images/School_Sites/West_MEC/familyLink.svg" height="40px" width="40px" alt="Family Link">
                                 </div>
                                 <!-- <- END OF FAMILYLINK IMAGE -> -->
                                 <!-- <- FAMILYLINK TEXT -> -->
@@ -80,6 +90,59 @@
                         <!-- <- END OF TILE ROW -> -->
                     </div>
                     <!-- <- END OF West-MEC TILE_CONTAINER -> -->
+
+                    <!-- <- DVHS TILE_CONTAINER -->
+                    <div class="tile_container hidden" id="DVHS-SchoolLinks">
+                        <h3>Deer Valley High School</h3>
+                        <!-- <- FIRST TILE ROW -> -->
+                        <div class="tile_row">
+                            <!-- <- CANVAS TILE -->
+                            <div class="tile" id="canvas_tile">
+                                <!-- <- CANVAS IMAGE -> -->
+                                <div class="tile_image" id="canvas_img">
+                                    <img draggable="false" src="images/School_Sites/DVHS/canvas.png" height="40px" width="40px" alt="Google Classroom">
+                                </div>
+                                <!-- <- END OF CANVAS IMAGE -> -->
+                                <!-- <- CANVAS TEXT -> -->
+                                <div class="tile_text" id="canvas_text">Canvas
+                                </div>
+                                <!-- <- END OF CANVAS TEXT -> -->
+                            </div>
+
+                            <!-- <-END OF CANVAS TILE -> -->
+                            <!-- <- POWERSCHOOLS TILE -> -->
+                            <div class="tile" id="powerschools_tile">
+                                <!-- <- POWERSCHOOLS IMAGE -> -->
+                                <div class="tile_image" id="powerschools_img">
+                                    <img draggable="false" src="images/School_Sites/DVHS/powerschools.png" height="40px" width="40px" alt="Powerschools">
+                                </div>
+                                <!-- <- END OF POWERSCHOOLS IMAGE -> -->
+                                <!-- <- POWERSCHOOLS TEXT -> -->
+                                <div class="tile_text" id="powerschools_text">
+                                    PowerSchools
+                                </div>
+                                <!-- <- END OF POWERSCHOOLS TEXT -> -->
+                            </div>
+                            <!-- <- END OF POWERSCHOOLS TILE -> -->
+                            <!-- <- DVUSD START PAGE TILE -> -->
+                            <div class="tile" id="dvhs_startpage_tile">
+                                <!-- <- POWERSCHOOLS IMAGE -> -->
+                                <div class="tile_image" id="dvhs_startpage_img">
+                                    <img draggable="false" src="images/School_Sites/DVHS/dvhs_startpage.svg" height="40px" width="40px" alt="Powerschools">
+                                </div>
+                                <!-- <- END OF POWERSCHOOLS IMAGE -> -->
+                                <!-- <- POWERSCHOOLS TEXT -> -->
+                                <div class="tile_text" id="dvhs_startpage_text">
+                                    DVHS Start Page
+                                </div>
+                                <!-- <- END OF POWERSCHOOLS TEXT -> -->
+                            </div>
+                            <!-- <- END OF POWERSCHOOLS TILE -> -->
+                        </div>
+                        <!-- <- END OF TILE ROW -> -->
+
+                    </div>
+                    <!-- <- END OF DVHS TILE_CONTAINER -> -->
                 </p>
             </div>
             <!-- End of Content 1 -->
@@ -129,8 +192,8 @@
     </div>
     <!-- End of Container -->
 </body>
-<script src="js/main.js"></script>
-<script src="js/links.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/links/school_links.js"></script>
 <script type="text/javascript " src="js/plugins/skrollr.js "></script>
 <script type="text/javascript ">
     var s = skrollr.init();
