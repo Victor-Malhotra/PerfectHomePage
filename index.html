@@ -23,6 +23,7 @@
     <!--* CSS & MIN.CSS *--->
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/carousel.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
     <!--* Carousel <link></link> --->
     <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
 </head>
@@ -40,13 +41,31 @@
 
 <body>
     <!-- Container-->
-    <div class="code_container" data-0="transform:translateX(0%);" data-2503="transform:translateX(-300%);">
+    <header style="position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;">
+        <a href="https://victormal001.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer"><img class="logo" src="images/logos/DCVS-logos_transparent.png" height="90px" width="100px" alt="DCVS" /></a>
+        <nav>
+            <ul class="nav__links">
+                <li>
+                    <a onclick="window.scrollBy(0,-1721.8)"><b>School Links</b></a>
+                </li>
+                <li>
+                    <a onclick="window.scrollBy(0,1721.8)"><b>Youtube</b></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="code_container" data-0="transform:translateX(0%);" data-1503="transform:translateX(-100%);">
+
+
         <!--====================================================================================================-->
         <!--========================================== SCHOOL SECTION ==========================================-->
         <!--====================================================================================================-->
         <section id="section_1" class="WestMEC_Background">
             <!-- CONTENT FOR SCHOOL -->
-            <div class="content">
+            <div class="content" id="school_content">
                 <h2>School Links</h2>
                 <p>
                     <div class="controll-tg">
@@ -57,7 +76,7 @@
                         </div>
                     </div>
                     <!-- <- West_MEC TILE CONTAINER -->
-                    <div class="tile_container" id="WestMEC-SchoolLinks">
+                    <div class="tile_container school_tile_container" id="WestMEC-SchoolLinks">
                         <h3>West-MEC Coding</h3>
                         <!-- <- FIRST TILE ROW -> -->
                         <div class="tile_row">
@@ -95,7 +114,7 @@
                     <!-- <- END OF West-MEC TILE_CONTAINER -> -->
 
                     <!-- <- DVHS TILE_CONTAINER -->
-                    <div class="tile_container hidden" id="DVHS-SchoolLinks">
+                    <div class="tile_container school_tile_container hidden" id="DVHS-SchoolLinks">
                         <h3>Deer Valley High School</h3>
                         <!-- <- FIRST TILE ROW -> -->
                         <div class="tile_row">
@@ -111,7 +130,6 @@
                                 </div>
                                 <!-- <- END OF CANVAS TEXT -> -->
                             </div>
-
                             <!-- <-END OF CANVAS TILE -> -->
                             <!-- <- POWERSCHOOLS TILE -> -->
                             <div class="tile" id="powerschools_tile">
@@ -140,9 +158,84 @@
                                 </div>
                                 <!-- <- END OF POWERSCHOOLS TEXT -> -->
                             </div>
-                            <!-- <- END OF POWERSCHOOLS TILE -> -->
+                            <!-- <- END OF DVUSD START TILE -> -->
+                            <!--  -->
+                            <!-- <- MATHWAY PAGE TILE -> -->
+                            <div class="tile" id="mathway_tile">
+                                <!-- <- MATHWAY IMAGE -> -->
+                                <div class="tile_image" id="mathway_img">
+                                    <img draggable="false" src="images/School_Sites/DVHS/mathway.png" height="40px" width="40px" alt="Mathway">
+                                </div>
+                                <!-- <- END OF MATHWAY IMAGE -> -->
+                                <!-- <- MATHWAY TEXT -> -->
+                                <div class="tile_text" id="mathway_text">
+                                    Mathway Calculator
+                                </div>
+                                <!-- <- END OF MATHWAY TEXT -> -->
+                            </div>
+                            <!-- <- END OF MAHTWAY TILE -> -->
                         </div>
                         <!-- <- END OF TILE ROW -> -->
+                        <!-- <- TILE ROW 2 -> -->
+                        <div class="tile_row">
+                            <!-- <- KHAN ACADMEY TILE -> -->
+                            <div class="tile" id="khan_academy_tile">
+                                <!-- <- KAHN ACADEMY IMAGE -> -->
+                                <div class="tile_image" id="khan_academy_img">
+                                    <img draggable="false" src="images/School_Sites/DVHS/khan_academy.png" height="40px" width="40px" alt="Khan Academy" />
+                                </div>
+                                <!-- <- END OF KAHN ACADEMY IMAGE -> -->
+                                <!-- <- KHAN ACADEMY TEXT -> -->
+                                <div class="tile_text" id="khan_academy_text">
+                                    Khan Academy
+                                </div>
+                                <!-- <- END OF KHAN ACADEMY TEXT -> -->
+                            </div>
+                            <!-- <- END OF KHAN ACADEMY TILE> --->
+                            <!-- COLLEGE BOARD TILE --->
+                            <div class="tile" id="college_board_tile">
+                                <!-- <- KAHN ACADEMY IMAGE -> -->
+                                <div class="tile_image" id="college_board_img">
+                                    <img draggable="false" src="images/School_Sites/DVHS/college_board.png" height="40px" width="40px" alt="Collage Board" />
+                                </div>
+                                <!-- <- END OF COLLEGE BOARD IMAGE -> -->
+                                <!-- <- COLLEGE BOARD TEXT -> -->
+                                <div class="tile_text" id="college_board_text">
+                                    AP College Board
+                                </div>
+                                <!-- <- END OF COLLEGE BOARD TEXT -> -->
+                            </div>
+                            <!-- <- END OF COLLEGE BOARD TILE> --->
+                            <!-- COLLEGE BOARD TILE --->
+                            <div class="tile" id="codehs_tile">
+                                <!-- <- KAHN ACADEMY IMAGE -> -->
+                                <div class="tile_image" id="codehs_img">
+                                    <img draggable="false" src="images/School_Sites/DVHS/codehs.png" height="40px" width="40px" alt="CodeHS" />
+                                </div>
+                                <!-- <- END OF COLLEGE BOARD IMAGE -> -->
+                                <!-- <- CODEHS TEXT -> -->
+                                <div class="tile_text" id="codehs_text">
+                                    CodeHS
+                                </div>
+                                <!-- <- END OF CODEHS TEXT -> -->
+                            </div>
+                            <!-- <- END OF CODEHS TILE> --->
+                            <!-- SCHOOL CITY TILE --->
+                            <div class="tile" id="school_city_tile">
+                                <!-- <- SCHOOL CITY IMAGE -> -->
+                                <div class="tile_image" id="school_city_img">
+                                    <img draggable="false" src="images/School_Sites/DVHS/school_city.png" height="40px" width="40px" alt="School City" />
+                                </div>
+                                <!-- <- END OF SCHOOL CITY IMAGE -> -->
+                                <!-- <- SCHOOL CITY TEXT -> -->
+                                <div class="tile_text" id="school_city_text">
+                                    School City
+                                </div>
+                                <!-- <- END OF SCHOOL CITY TEXT -> -->
+                            </div>
+                            <!-- <- END OF SCHOOL CITY TILE> --->
+                        </div>
+                        <!-- <- END OF TILE ROW 2 -> --->
 
                     </div>
                     <!-- <- END OF DVHS TILE_CONTAINER -> -->
@@ -160,8 +253,23 @@
                     <!--* https://www.youtube.com/watch?v=vHm9_MN8jRA --->
                     <div class="container">
                         <div class="owl-carousel">
-                            <div class="item-video">
+                            <div class="item-video" data-merge="2">
                                 <a href="https://www.youtube.com/watch?v=wX75Z-4MEoM&t=1384s" class="owl-video"></a>
+                            </div>
+                            <div class="item-video" data-merge="2">
+                                <a href="https://www.youtube.com/watch?v=vHm9_MN8jRA" class="owl-video"></a>
+                            </div>
+                            <div class="item-video" data-merge="2">
+                                <a href="https://www.youtube.com/watch?v=2KL-z9A56SQ" class="owl-video"></a>
+                            </div>
+                            <div class="item-video" data-merge="2">
+                                <a href="https://www.youtube.com/watch?v=FEmysQARWFU" class="owl-video"></a>
+                            </div>
+                            <div class="item-video" data-merge="2">
+                                <a href="https://www.youtube.com/watch?v=l9YxTXDiiFY" class="owl-video"></a>
+                            </div>
+                            <div class="item-video" data-merge="2">
+                                <a href="https://www.youtube.com/watch?v=-JNRQ5HjNeI" class="owl-video"></a>
                             </div>
                         </div>
                     </div>
@@ -171,28 +279,28 @@
         </section>
         <!-- End of Secion 2 -->
         <!-- Section 3 -->
-        <section>
-            <!-- Content 3 -->
-            <div class="content ">
+        <!-- <section> -->
+        <!-- Content 3 -->
+        <!-- <div class="content ">
                 <h2>Section Three</h2>
                 <p>
 
                 </p>
-            </div>
-            <!-- End of Content 3 -->
-        </section>
+            </div> -->
+        <!-- End of Content 3 -->
+        <!-- </section> -->
         <!-- End of Secion 3 -->
         <!-- Section 4 -->
-        <section>
-            <div class="content ">
-                <!-- Content 4 -->
-                <h2>Section Four</h2>
+        <!-- <section>
+            <div class="content "> -->
+        <!-- Content 4 -->
+        <!-- <h2>Section Four</h2>
                 <p>
 
                 </p>
-            </div>
-            <!-- End of Content 4 -->
-        </section>
+            </div> -->
+        <!-- End of Content 4 -->
+        <!-- </section> -->
         <!-- End of Secion 4 -->
     </div>
     <!-- End of Container -->
@@ -210,7 +318,12 @@
 <!--* Owl Carousel --->
 <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script type="text/javascript">
-    $(".owl-carousel").owlCarousel();
+    $(".owl-carousel").owlCarousel({
+        merge: true,
+        margin: 10,
+        video: true,
+        center: true,
+    });
 </script>
 <!--* Require JS --->
 

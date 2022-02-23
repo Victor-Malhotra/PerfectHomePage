@@ -14,8 +14,9 @@ body {
     .code_container {
         scroll-snap-type: both mandatory;
         position: fixed;
-        top: 0;
+        top: 20;
         left: 0;
+        height: 90%;
         width: 100%;
         display: flex;
         // Sections
@@ -59,6 +60,16 @@ body {
     }
 }
 
+#school_content {
+    background: rgba(168, 166, 166, 0.548);
+    box-shadow: -4px -4px 4px 4px rgba(0, 0, 0, 0.548), inset 0px 4px rgba(85, 85, 85, 0.5);
+    .school_tile_container {
+        color: white;
+        background-color: rgba(27, 27, 27, 0.719);
+        box-shadow: -4px -4px 4px 4px rgba(114, 112, 112, 0.548);
+    }
+}
+
 .hidden {
     transition: all 3000ms;
     display: none;
@@ -68,14 +79,14 @@ body {
 
 .controll-tg {
     position: fixed;
-    top: 88%;
+    top: 95%;
     left: 50%;
     display: block;
     align-items: center;
     transform: translate(-50%, -50%);
     .toggle-btn {
-        width: 80px;
-        height: 40px;
+        width: 90px;
+        height: 50px;
         background: #808080;
         border-radius: 30px;
         padding: 5px;
@@ -97,10 +108,18 @@ body {
 }
 
 .WestMEC_Background {
-    background-image: url('../images/background_imgs/West_MEC-BackGround.png');
+    background-image: url('../images/background_imgs/West-MEC_Arrow.png');
     background-repeat: no-repeat;
-    background-position: fixed;
-    background-size: 100vw 100vh;
+    background-position: center;
+    background-size: 90vw 90vh;
+    background-origin: content-box;
+}
+
+.DVHS_Background {
+    background-image: url('../images/background_imgs/DVHS_SkyHawks.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90vw 90vh;
     background-origin: content-box;
 }
 
@@ -112,7 +131,7 @@ body {
 .tile_container {
     >h3 {
         font-size: 2.5rem;
-        color: #534949;
+        color: #eee8e8;
     }
     .tile_row {
         margin-top: 1.25rem;
